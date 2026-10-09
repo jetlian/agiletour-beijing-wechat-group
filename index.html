@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>北京敏捷社区活动粉丝群</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 基础样式 */
+        body {
+            background-color: #121212; /* 深灰色背景，接近黑色 */
+            color: #E0E0E0; /* 浅灰色文字，易读 */
+            font-family: 'Noto Sans SC', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        /* 页面容器，模拟手机屏幕 */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            max-width: 500px; /* 限制最大宽度，避免在宽屏上拉伸过大 */
+            height: 100vh; /* 确保在手机上占满高度 */
+            max-height: 90vh;
+            padding: 0 15px;
+        }
+
+        /* 标题样式 */
+        .title {
+            font-size: clamp(1.2rem, 5vw, 2rem);
+            font-weight: 700;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+
+        /* 二维码图片样式 */
+        .qr-code-img {
+            width: auto;
+            max-width: 100%;
+            height: auto;
+            max-height: 60vh; /* 限制图片高度，使其在页面中间有足够的空间 */
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+            margin: 20px 0;
+            border: 2px solid #282828;
+            transition: transform 0.3s ease-in-out;
+        }
+        .qr-code-img:hover {
+            transform: scale(1.02);
+        }
+
+        /* 联系信息部分样式 */
+        .contact-info {
+            font-size: clamp(0.8rem, 3vw, 1rem);
+            line-height: 1.6;
+            margin-top: 25px;
+            color: #B0B0B0;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        .contact-info a {
+            color: #C2F0FF; /* 淡蓝色，突出链接 */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">邀请您，加入敏捷社区微信群。</h1>
+        <img class="qr-code-img" src="images/agile-bj-wechat.jpg" alt="北京敏捷社区活动粉丝群二维码">
+        <div class="contact-info">
+            <p>二维码过期，请联系社区志愿者：</p>
+            <p>电话/微信：<a href="tel:13810098755">13810098755</a></p>
+            <p>联系邮箱：<a href="mailto:agiletourbeijing@hotmail.com">agiletourbeijing@hotmail.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
